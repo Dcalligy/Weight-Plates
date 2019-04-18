@@ -1,0 +1,13 @@
+1.00	red	 16
+1.25	black	 8
+2.00	gold	 14
+2.50	blue	 18
+5.00	sliver	 28
+10.00	grey	 26
+15.00	pink	 20
+20.00	magenta	 20
+25.00	green	 16
+30.00	purple	 24
+35.00	maroon	 12
+40.00	yellow	 10
+45.00	black	 12

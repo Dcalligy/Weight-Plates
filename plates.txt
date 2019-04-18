@@ -1,0 +1,13 @@
+40 yellow 10
+2.5 blue 18
+10 grey 26
+5 sliver 28
+15 pink 20
+45 black 12
+2 gold 14
+25 green 16
+1 red 16
+30 purple 24
+1.25 black 8
+20 magenta 20
+35 maroon 12 

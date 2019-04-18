@@ -1,0 +1,30 @@
+# Author: Jing Wang, for IT Program Design
+# try_plates is a Unix shell script that will be used to test project 6.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_plates
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_plates
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+#
+./a.out
+cat ordered_plates.txt
+echo '===================================================='
+echo 'Expected output:'
+echo '1.00	red	16'
+echo '1.25	black	8'
+echo '2.00	gold	14'
+echo '2.50	blue	18'
+echo '5.00	sliver	28'
+echo '10.00	grey	26'
+echo '15.00	pink	20'
+echo '20.00	magenta	20'
+echo '25.00	green	16'
+echo '30.00	purple	24'
+echo '35.00	maroon	12'
+echo '40.00	yellow	10'
+echo '45.00	black	12'
+echo '===================================================='
