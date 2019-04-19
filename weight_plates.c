@@ -19,7 +19,7 @@ int main(){
     FILE *wfp;
     char buffer[MAX_LEN + 1]; // Buffer used to read in file
     int i, count = 0;
-    struct plate plates[MAX_LEN + 1]; // Array of plates
+    struct plate arr_plates[MAX_LEN + 1]; // Array of plates
 
     fp = fopen("plates.txt", "r");
     wfp = fopen("ordered_plates.txt", "w");
@@ -31,27 +31,27 @@ int main(){
 
     while(fscanf(fp, "%s", buffer) != EOF){
         // Read the weight, color and quantity
-        plates[count].weight = atof(buffer);
+        arr_plates[count].weight = atof(buffer);
         fscanf(fp, "%s", buffer);
-        strcpy(plates[count].color, buffer);
+        strcpy(arr_plates[count].color, buffer);
         fscanf(fp, "%s", buffer);
-        plates[count].quantity = atoi(buffer);
+        arr_plates[count].quantity = atoi(buffer);
         count++;
     }
     
-    selection_sort(plates, count);
+    selection_sort(arr_plates, count);
     printf("\n\nInformation in data file in ascending order: \n\n");
     for(i = 0; i < count; i++){
-       printf("%0.2f\t", plates[i].weight);
-       printf("%s\t", plates[i].color);
-       printf(" %d\n", plates[i].quantity);
+       printf("%0.2f\t", arr_plates[i].weight);
+       printf("%s\t", arr_plates[i].color);
+       printf(" %d\n", arr_plates[i].quantity);
     }
     
     // Write the data to new txt file ordered_plates.txt
     for(i = 0; i < count; i++){
-        fprintf(wfp, "%0.2f\t", plates[i].weight);
-        fprintf(wfp, "%s\t", plates[i].color);
-        fprintf(wfp," %d\n", plates[i].quantity);
+        fprintf(wfp, "%0.2f\t", arr_plates[i].weight);
+        fprintf(wfp, "%s\t", arr_plates[i].color);
+        fprintf(wfp," %d\n", arr_plates[i].quantity);
     }
 
     printf("\n\nFile ordered_plates.txt was written\n\n");
